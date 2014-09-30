@@ -1,0 +1,21 @@
+.nav_list {
+  font-family: courier;
+  font-weight: 100;
+  line-height: 30px;
+  width: 25%;
+  height: 330px;
+  margin-top: 30%;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: lightgray;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
