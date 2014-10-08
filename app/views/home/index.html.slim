@@ -4,17 +4,24 @@
     h1
       | _cntrl
 
-
   .nav_list
     ul
-      li = link_to "about"
+      li = link_to "about", nil, remote: true
+      li = link_to "listen", nil, remote: true
+      li = link_to "download", nil, remote: true
       li = link_to "soundcloud", "https://soundcloud.com/cntrl-3", target: "blank"
-      li = link_to "music"
-      li = link_to "my favorite synth" 
-      li = link_to "my favorite soft synth"
-      li = link_to "my favorite pants"
-      li = link_to "my favorite shoes"
-      li = link_to "the best cheeseburger"
-      li = link_to "my favorite zelda game"
-      li = link_to "downloads"
-      li = link_to "work"
+      li = link_to "my favorite synth", nil, id: 'synth', remote: true
+      li = link_to "my favorite soft synth", nil, id: 'soft_synth', remote: true
+      li = link_to "my favorite pants", nil, remote: true
+      li = link_to "my favorite shoes", nil, remote: true
+      li = link_to "the best cheeseburger", nil, remote: true
+      li = link_to "my favorite zelda game", nil, remote: true
+
+.right_container
+  .image_box 
+    .synth
+      p
+       | Korg ms-20
+    .soft_synth
+      p
+       | Sylenth
